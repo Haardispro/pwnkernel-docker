@@ -7,8 +7,8 @@ export BUSYBOX_VERSION=1.32.0
 # dependencies
 #
 echo "[+] Checking / installing dependencies..."
-sudo apt-get -q update
-sudo apt-get -q install -y bc bison flex libelf-dev cpio build-essential libssl-dev qemu-system-x86
+apt-get -q update
+apt-get -q install -y bc bison flex libelf-dev cpio build-essential libssl-dev qemu-system-x86
 
 #
 # linux kernel
