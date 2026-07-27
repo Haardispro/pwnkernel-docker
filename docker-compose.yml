@@ -9,7 +9,7 @@ services:
     tty: true 
     command: /bin/bash 
     volumes: 
-      - ctf-data:/
+      - ctf-data:/home/ctf
 
 volumes:
   ctf-data:
