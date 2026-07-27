@@ -1,20 +1,24 @@
 # pwn.college helper environment for kernel development and exploitation
 
-What do we need inside the container: 
-- python3
-- python3-pip
-- gdb 
-- gdbserver 
-- wget 
-- git 
 
+### Note: If your OS is anything newer than Ubuntu 22.04, normally building may not work due to older dependencies. Use the docker environment instead
 
+#### Instructions: 
+
+```
+git clone https://github.com/Haardispro/pwnkernel-docker.git
+cd pwnkernel-docker/
+```
+
+Run `build` only once, after that its not needed. 
 ```
 docker compose build 
 ```
 
+Use this command to interact with the environment. 
+
 ```
-docker compose up
+docker compose run --rm ctf
 ```
 
 
